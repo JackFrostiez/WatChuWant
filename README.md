@@ -1,5 +1,6 @@
 # WatChuWant  
 Utilizing the Wegmans API, the application provides different recipes based on your input of " What Chu Want" to eat and how much time you have to prepare it, cook it, and enjoy it.
+Check it out on devpost! https://devpost.com/software/whatchuwant
 
 # Inspiration  
 Inspiration came from our ambition to complete a well-developed project for the prize of using the Wegmans API.
@@ -26,4 +27,3 @@ Enhancements if possible to ensure it meets all the standards necessary and have
 html, css, javascript, python, and django
 
 Checkout on Devpost!
-https://devpost.com/software/whatchuwant
