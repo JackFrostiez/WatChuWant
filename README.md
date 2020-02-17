@@ -24,3 +24,6 @@ Enhancements if possible to ensure it meets all the standards necessary and have
 
 # Built With  
 html, css, javascript, python, and django
+
+Checkout on Devpost!
+https://devpost.com/software/whatchuwant
