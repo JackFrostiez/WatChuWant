@@ -1,0 +1,34 @@
+{% extends "wegmans/base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+  {% if list_of_acceptable_recipes %}
+
+  <h1 id ="result_prompt_upper"> You're feeling "{{input}}" and  <br> only have {{time}} minutes?  </h1>
+  <h1 id ="result_prompt_lower"> Try these recipes from Wegmans: </h1>
+
+  
+  <div class = "recipes">
+    {% for i in list_of_acceptable_recipes %}
+
+      <h2 id= "result_recipes">
+      <a href="{{i.link}}" style="text-decoration: none;" target="_blank">{{i.name}}</a>
+      </h2>
+
+    {% endfor %}
+  </div>
+  {% else %}
+
+  <h1> No recipes can be generated! </h1>
+  <h1> Please try again. </h1>
+
+  {% endif %}
+
+  <br>
+  <div style="text-align:center;">
+    <button onclick="location.href='{% url 'wegmans-land' %}'" type="button"> Feeling something else? </button>
+  </div>
+
+{% endblock content %}

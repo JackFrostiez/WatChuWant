@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="stylesheet" href="{% static 'wegmans/styles.css' %}">
+
+    {% if title %}
+      <title> WCW - {{ title}} </title>
+    {% else %}
+      <title> Fix your title </title>
+    {% endif %}
+
+  </head>
+
+  <body>
+
+  <h1> Welcome to WhatChuWant! </h1>
+
+  <h2> What type of food are you feeling? </h2>
+
+  <form method="POST" style="text-align: center;" action = "{% url 'wegmans-pre' %}">
+    {% csrf_token %}
+    <input type="text" placeholder="Enter here!" name="event" required/>
+    <!-- <br>
+    <br>
+    <input id="food_button" type="submit" value="Submit" /> -->
+  </form>
+
+</html>

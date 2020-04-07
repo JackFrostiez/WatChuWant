@@ -1,0 +1,20 @@
+{% extends "wegmans/base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+  <h1> Here is your cart! </h1>
+
+  <ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+
+
+  <div style="text-align:center;">
+    <button onclick="location.href='{% url 'wegmans-land' %}'" type="button"> New event </button>
+  </div>
+
+{% endblock content %}

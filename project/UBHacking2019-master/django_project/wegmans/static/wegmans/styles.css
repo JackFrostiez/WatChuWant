@@ -1,0 +1,96 @@
+body{
+  background: #f12711;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* padding-bottom: 75px; */
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  /* font-size: 55px; */
+  font-size: 6vw;
+}
+
+#result_prompt_upper {
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+}
+
+#result_prompt_lower {
+  text-align: center;
+  color: white;
+  font-size: 5vw;
+  /* text-decoration: underline; */
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+}
+
+#result_recipes {
+  text-align: center;
+  color: white;
+  font-size: 4vh;
+}
+
+
+input[type=text] {
+  text-align: center;
+  font-size: 3vw;
+}
+
+input[type=number] {
+  text-align: center;
+  font-size: 3vw;
+}
+
+.recipes {
+  column-count: 2;
+  column-gap: 40px;
+  font-size: 8vw;
+}
+
+a {
+  color: white
+}
+
+a:hover {
+    color: black;
+}
+
+button{
+  padding: 14px;
+  /* font-size:34px; */
+  font-size: 4.7vw;
+  border-radius: 58px;
+  margin-bottom: 50px;
+}
+
+button:hover{
+  padding: 14px;
+  /* font-size:34px; */
+  font-size: 4.8vw;
+  border-radius: 58px;
+  margin-bottom: 50px;
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-size: 2vh;
+  font-size: 4vw;
+}
+
+/* #food_button{
+  padding: 3vw;
+  font-size:3vw;
+} */
+
+#time_button{
+  padding: 7vw;
+  font-size: 4vw;
+}
